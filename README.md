@@ -45,4 +45,4 @@ Depois, é só abrir o navegador e acessar `http://127.0.0.1:5000`.
 -   **Vídeo de Demonstração:** [Link para o vídeo no YouTube](URL_DO_SEU_VIDEO_AQUI)
 
 ---
-**Desenvolvido por:** [João Gois de Otoni]
+**Desenvolvido por:** João Gois de Otoni
