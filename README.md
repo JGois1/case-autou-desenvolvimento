@@ -20,21 +20,17 @@ cd case-autou-desenvolvimento
 
 **2. Crie e ative um ambiente virtual:**
 ```bash
-# Crie o venv
+
 python -m venv venv
 
-# No Windows
 .\venv\Scripts\activate
 
-# No macOS/Linux
-source venv/bin/activate
 ```
 
 **3. Instale as dependências:**
 ```bash
 pip install -r requirements.txt
 ```
-> **Aviso:** Na primeira execução, o programa vai baixar os modelos de IA, o que pode levar alguns minutos.
 
 **4. Rode a aplicação:**
 ```bash
@@ -49,4 +45,4 @@ Depois, é só abrir o navegador e acessar `http://127.0.0.1:5000`.
 -   **Vídeo de Demonstração:** [Link para o vídeo no YouTube](URL_DO_SEU_VIDEO_AQUI)
 
 ---
-**Desenvolvido por:** [Seu Nome]
+**Desenvolvido por:** [João Gois de Otoni]
