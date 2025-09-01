@@ -1,32 +1,23 @@
-# app.py (versão com melhor tratamento de erros)
-
 import os
 import google.generativeai as genai
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 
-# Carrega as variáveis de ambiente do arquivo .env
-# É crucial que isso aconteça ANTES de usar a chave
 load_dotenv()
 
-# Inicializa a aplicação Flask
 app = Flask(__name__)
 
-# --- VERIFICAÇÃO DE SEGURANÇA ---
-# Pega a chave de API do ambiente. Se não encontrar, o programa vai parar com uma mensagem clara.
 api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
-    # Este erro vai aparecer no seu terminal se a chave não for encontrada.
+    
     raise ValueError("A chave GOOGLE_API_KEY não foi encontrada. Verifique seu arquivo .env")
 
-# Configura a API do Google AI com a sua chave
+
 genai.configure(api_key=api_key)
 
 
 def analyze_email_with_gemini(email_content):
-    """
-    Usa o modelo Gemini para classificar e gerar uma resposta para um email.
-    """
+    
     try:
         model = genai.GenerativeModel('gemini-1.5-flash-latest')
         prompt = f"""
@@ -48,9 +39,8 @@ def analyze_email_with_gemini(email_content):
         """
         response = model.generate_content(prompt)
 
-        # Tratamento de erro mais robusto para a resposta da API
         if not hasattr(response, 'text'):
-            # Isso pode acontecer se a API bloquear a resposta por segurança, por exemplo
+           
             return "Análise Bloqueada", "A resposta da IA foi bloqueada por motivos de segurança."
 
         text_response = response.text.strip()
@@ -60,10 +50,10 @@ def analyze_email_with_gemini(email_content):
         return classification_part, response_part
     
     except Exception as e:
-        # Pega qualquer outro erro que possa acontecer durante a chamada da API ou processamento
+        
         print(f"Erro capturado")
         print(f"ERRO: {e}")
-        # Retorna uma mensagem de erro amigável para o usuário ver na tela
+        
         return "Erro na Análise", "Ocorreu um problema ao comunicar com a IA. Verifique o terminal para mais detalhes."
 
 
