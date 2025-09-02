@@ -42,6 +42,7 @@ Depois, é só abrir o navegador e acessar `http://127.0.0.1:5000`.
 -   **Vídeo de Demonstração:** https://youtu.be/Psf-gc1t7J0
 
 ## Obs: Se não abrir de primeira o link do Render aguarde 1 minuto e dê F5 para o servidor 'acordar', obrigado!
+## Qualquer outro problema nos seus testes pode me mandar um email que eu resolvo, Abs.
 
 ---
 **Desenvolvido por:** João Gois de Otoni
