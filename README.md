@@ -1,5 +1,12 @@
 # Classificador de Emails - Case Prático AutoU
 
+## Links do Projeto
+
+-   **Aplicação Online:** https://case-autou-joaogois.onrender.com
+-   **Vídeo de Demonstração:** https://youtu.be/Psf-gc1t7J0
+
+## Obs: Se não abrir de primeira o link do Render aguarde 1 minuto e dê F5 para o servidor 'acordar', obrigado!
+
 Este projeto foi desenvolvido para o case prático da AutoU. É uma aplicação web que usa IA para classificar emails como "Produtivo" ou "Improdutivo" e sugerir uma resposta.
 
 ## Tecnologias
@@ -36,12 +43,6 @@ flask run
 
 Depois, é só abrir o navegador e acessar `http://127.0.0.1:5000`.
 
-## Links do Projeto
-
--   **Aplicação Online:** https://case-autou-joaogois.onrender.com
--   **Vídeo de Demonstração:** https://youtu.be/Psf-gc1t7J0
-
-## Obs: Se não abrir de primeira o link do Render aguarde 1 minuto e dê F5 para o servidor 'acordar', obrigado!
 ## Qualquer outro problema nos seus testes pode me mandar um email que eu resolvo, Abs.
 
 ---
