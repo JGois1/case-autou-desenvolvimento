@@ -12,7 +12,7 @@ Este projeto foi desenvolvido para o case prático da AutoU. É uma aplicação 
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/JGois1/case-autou-desenvolvimento.git](https://github.com/JGois1/case-autou-desenvolvimento.git)
+git clone [https://github.com/JGois1/case-autou-desenvolvimento.git]
 cd case-autou-desenvolvimento
 ```
 
